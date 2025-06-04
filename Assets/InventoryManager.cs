@@ -7,12 +7,12 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager instance;
     public ScriptableItem cosa;
-    public Text[] cosaNombres;
+    public Text[] cosaNames;
     public Image[] cosaSprites;
 
     void Awake()
     {
-        if(instance != null && instance != this)
+        if (instance != null && instance != this)
         {
             Destroy(gameObject);
         }
@@ -24,13 +24,13 @@ public class InventoryManager : MonoBehaviour
 
     public void AddItem(ScriptableItem item)
     {
-        for(int i = 0; i < cosa.Lenght; instance ++)
+        for (int i = 0; i < cosa.Lenght; instance++)
         {
-            if(cosa[i] == null)
+            if (cosa[i] == null)
             {
                 cosa[i] = item;
-                cosaNames[i].Text = itemName;
-                cosaSprites[i].Sprite = itemSprite;
+                cosaNames[i].text = item.itemName;
+                cosaSprites[i].sprite = item.itemSprite;
 
                 return;
             }

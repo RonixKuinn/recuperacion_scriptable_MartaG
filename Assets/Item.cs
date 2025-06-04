@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public ScriptableItem item;
-    public SpriteRenderer spiteRendered;
+    public ScriptableItem itemInfo;
+    private SpriteRenderer spriteRendered;
 
     void Awake()
     {
-        spiteRendered = GetComponent<SpriteRenderer>();
+     spriteRendered = GetComponent<SpriteRenderer>();
     }
 
     void Start()
     {
-        spiteRendered.sprite = itemInfo.itemSprite;
+        spriteRendered.sprite = itemInfo.itemSprite;
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -22,4 +22,5 @@ public class Item : MonoBehaviour
         InventoryManager.instance.AddItem(itemInfo);
         Destroy(gameObject);
     }
+
 }
