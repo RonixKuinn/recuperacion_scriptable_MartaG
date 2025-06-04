@@ -22,7 +22,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void AddItem(ScriptableItem item)
+    /*public void AddItem(ScriptableItem item)
     {
         for (int i = 0; i < cosa.Lenght; instance++)
         {
@@ -35,5 +35,5 @@ public class InventoryManager : MonoBehaviour
                 return;
             }
         }
-    }
+    }*/
 }

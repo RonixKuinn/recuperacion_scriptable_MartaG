@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96c1718058d724a4cbd76669f8dd4b61, type: 3}
-  m_Name: Cactus
+  m_Script: {fileID: 11500000, guid: e8787187aaa8000448d4bac0ae9d1e4a, type: 3}
+  m_Name: Bate
   m_EditorClassIdentifier: 
-  itemName: Cactus
-  itemPrice: 7
-  itemSprite: {fileID: 21300000, guid: 34c8064f2a3a34f43937d3d4ef5133c7, type: 3}
+  itemName: bate
+  itemPrice: 3
+  itemSprite: {fileID: 21300000, guid: c98a7dc58d91ac94ea2ce456ed863f04, type: 3}
